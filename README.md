@@ -1,8 +1,8 @@
 # Installation guide
 
-## Instalación de servidor de aplicaicones
+## Instalación de servidor de aplicaciones
 
-El servidor de aplciaciones es donde se codea y se compila la app, y donde correr el proveedor de los paquetes JS que utiliza la app en modo debug/dev.
+El servidor de aplicaciones es donde se codea y se compila la app, y donde corre el proveedor de los paquetes JS que utiliza la app en modo debug/dev.
 
 Para mas info ver [React Native](https://facebook.github.io/react-native/)
 
@@ -137,7 +137,7 @@ npm start -- --reset-cache
 
 ## Estructura de directorio
 
-'''
+```
 root
 -src
 	-modules
@@ -147,10 +147,12 @@ root
 	-app.android.js
 	-screens.js
 
-'''
+```
 
 
-Las nuevas pantallas se agregan en el modulo pixel2html. Cada pantalla consta de al menos 2 archivos: uno de codigo y el otro de esilos. Tambien se puede optar por utilizar un solo archivo de codigo y definir el estilo propio de la pantalla en este mismo archivo.
+Las nuevas pantallas se agregan en el modulo `pixel2html`. 
+Cada pantalla consta de al menos 2 archivos: uno de codigo y el otro de estilos. 
+Se puede optar por utilizar un solo archivo de codigo y definir el estilo propio de la pantalla en este mismo archivo.
 Para que pueda ser utilizada en el resto de la app, la pantalla se debe registrar en screens.js, es decir se importa `import` y se registra `registerScreen`.
 
 
