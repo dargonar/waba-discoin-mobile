@@ -1,0 +1,10 @@
+# This interface will be implemented in C++ and can be called from any language.
+bts2helper = interface +c {
+    static tx_digest(tx_json: string, chain_id: string) : string;
+    static sign_compact(digest: string, wif: string) : string;
+    static is_valid_name(name: string) : bool;
+    static is_cheap_name(name: string) : bool;
+    static calc_fee(fee_schedule: string, ops: list<string>, core_exchange_ratio: string): list<i64>;
+    static encode_memo(priv : string, pub : string, msg : string) : string;
+    static decode_memo(priv : string, pub : string, memo_from : string, memo_to : string, memo_nonce : string, memo_message : string) : string;
+}
